@@ -1,0 +1,97 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:text="BottomSheetOne Open Close" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:text="BottomSheetTwo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="Menu 1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="Menu 2" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="Menu 3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="Menu 1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="Menu 2" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPanel6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="Menu 3" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
